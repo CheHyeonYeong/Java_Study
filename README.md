@@ -15,8 +15,10 @@
 JAVA-study
     ├── 2024_JAVA
     |   └── FirstJAVA
-    |        └──a01~a 
-    ├── TBO
+    |        ├──a01_Hello JAva
+    |        ├──a02_Escape
+    |        └──a03_variable
+    ├── TBO 추후 필요시 자바 공부에 추가
     |   ├── 
     |
     ├── TBO
