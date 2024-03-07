@@ -37,8 +37,14 @@ public class A03_variable {
 		int i =10; //변수의 선언 : 데이터 타입 변수명 = 초기화 값
 		String s ="Hello World!";
 		System.out.println(s);
-		char c ='1';
+		char c ='1'; 		
+		System.out.println(s);
 		
+		int k=11;
+
+		System.out.println("첨수의 나이는 "+ k+ "입니다.");
+		System.out.println("철수의 몸무게도 마침 "+k + "kg 입니다.");
+		System.out.println("철수의 친구가 마침 또 + k+ 명 입니다. ");
 	
 	}
 
