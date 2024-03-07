@@ -14,7 +14,7 @@
 ```
 JAVA-study
     ├── 2024_JAVA
-    |   └── FirstJAVA
+    |   └── FirstJAVA/src
     |        ├──a01_Hello JAva
     |        ├──a02_Escape
     |        └──a03_variable
