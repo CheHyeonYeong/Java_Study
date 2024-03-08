@@ -3,12 +3,7 @@ package week01;
 public class A_Quiz {
 	
 	public static void main(String[] args) {
-		String name="홍길동";
-		int age=24;
-		String tel= "010-2345-4567";
-		int height=187;
-		int weight = 87;
-		char bloodType='O';
+		
 		
 		System.out.println(
 				"====================\n"
@@ -37,15 +32,7 @@ public class A_Quiz {
 				);		
 		System.out.println();
 		System.out.println();
-		System.out.println();
 
-		System.out.println("\n=====출력결과=====");
-		System.out.println();
-		System.out.printf("이름: %s \n나이: %d\nTel: %s\n키: %d \n몸무게:%d\n혈액형: %c", name, age, tel, height,weight, bloodType);
-
-	
-		System.out.printf("\n%.2f",(37.00/12));
-	
 	}
 	
 	
