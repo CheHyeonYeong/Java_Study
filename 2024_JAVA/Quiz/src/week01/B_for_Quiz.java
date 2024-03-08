@@ -22,7 +22,7 @@ public class B_for_Quiz {
 		//1+(1+2)+(1+2+3) +....+(1+2+3+...+10)의 결과를 구하기
 		int sum =0;
 		for (int i=1;i<=10;i++) {
-			for (int j = 1;j<i;j++) {
+			for (int j = 1;j<=i;j++) {
 				sum +=j;
 			}
 		}
@@ -30,8 +30,8 @@ public class B_for_Quiz {
 		
 	}
 	public static void main(String[] args) {
-		one();
-//		two();
+//		one();
+		two();
 //		three();
 	}
 }
