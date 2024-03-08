@@ -8,7 +8,7 @@ public class B_Quiz {
 	public static void one() {
 		//1. 1~101 미만의 정수를 생성하고 그 숫자의 홀짝을 구분해라 3항 연산
 		System.out.println("1번");
-		int rand = (int)(Math.random()*100);
+		int rand = (int)(Math.random()*100+1);
 		String answer = (rand%2==0)?"짝":"홀";
 		System.out.println(answer);
 	}
