@@ -1,6 +1,6 @@
 package week01;
 
-public class B_for_Quiz {
+public class B_Quizfor {
 	
 	public static void one() {
 		//100부터 1까지 순서대로 출력하기

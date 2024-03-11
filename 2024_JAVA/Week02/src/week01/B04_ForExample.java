@@ -32,7 +32,6 @@ public class B04_ForExample {
 //				System.out.println("Á¤´ä");
 //				break;
 //			}
-//			
 //		}
 		
 		String attempt = "";
@@ -41,6 +40,5 @@ public class B04_ForExample {
 			attempt = scan.nextLine();
 		}
 		
-
 	}
 }
