@@ -6,110 +6,110 @@ import java.util.Scanner;
 public class B_Quiz {
 
 	public static void one() {
-		//1. 1~101 ¹Ì¸¸ÀÇ Á¤¼ö¸¦ »ı¼ºÇÏ°í ±× ¼ıÀÚÀÇ È¦Â¦À» ±¸ºĞÇØ¶ó 3Ç× ¿¬»ê
-		System.out.println("1¹ø");
+		//1. 1~101 ë¯¸ë§Œì˜ ì •ìˆ˜ë¥¼ ìƒì„±í•˜ê³  ê·¸ ìˆ«ìì˜ í™€ì§ì„ êµ¬ë¶„í•´ë¼ 3í•­ ì—°ì‚°
+		System.out.println("1ë²ˆ");
 		int rand = (int)(Math.random()*100+1);
-		String answer = (rand%2==0)?"Â¦":"È¦";
+		String answer = (rand%2==0)?"ì§":"í™€";
 		System.out.println(answer);
 	}
 	public static void two() {
-		System.out.println("2¹ø");
-		//2. -5~5»çÀÌÀÇ ÀÓÀÇÀÇ Á¤¼ö¸¦ »ı¼ºÇÏ°í »ïÇ×¿¬»ê½ÄÀ» »ç¿ëÇÏ¿© Àı´ë°ªÀ» Ãâ·ÂÇÏ¼¼¿ä
+		System.out.println("2ë²ˆ");
+		//2. -5~5ì‚¬ì´ì˜ ì„ì˜ì˜ ì •ìˆ˜ë¥¼ ìƒì„±í•˜ê³  ì‚¼í•­ì—°ì‚°ì‹ì„ ì‚¬ìš©í•˜ì—¬ ì ˆëŒ€ê°’ì„ ì¶œë ¥í•˜ì„¸ìš”
 		 Random random = new Random();
 	     int randomNumber = random.nextInt(11) - 5;
 	     String answer = (randomNumber < 0) ? Integer.toString(randomNumber * (-1)) : Integer.toString(randomNumber);
-	     System.out.println("ÀÓÀÇÀÇ Á¤¼ö: " + answer);
+	     System.out.println("ì„ì˜ì˜ ì •ìˆ˜: " + answer);
 		
 	}
 	public static void three() {
-		//Á¤¼ö¸¦ ÀÔ·Â¹Ş¾Æ È¦Â¦ÀÎÁö ÆÇº° 3Ç×¿¬»ê
-		System.out.println("3¹ø");
+		//ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ í™€ì§ì¸ì§€ íŒë³„ 3í•­ì—°ì‚°
+		System.out.println("3ë²ˆ");
 		Scanner s = new Scanner(System.in);
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		int i = s.nextInt();
-		String answer = (i%2==0)?"Â¦":"È¦";
+		String answer = (i%2==0)?"ì§":"í™€";
 		System.out.println(answer);
 		s.close();
 	}
 
 	public static void four() {
-		//Å°¿Í ³ªÀÌ¸¦ ÀÔ·Â¹Ş¾Æ¼­ height >=140, age >=8 ³îÀÌ±â±¸ Å¾½Â ¿©ºÎ °áÁ¤ ÇÁ·Î±×·¥ ÀÛ¼º
+		//í‚¤ì™€ ë‚˜ì´ë¥¼ ì…ë ¥ë°›ì•„ì„œ height >=140, age >=8 ë†€ì´ê¸°êµ¬ íƒ‘ìŠ¹ ì—¬ë¶€ ê²°ì • í”„ë¡œê·¸ë¨ ì‘ì„±
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Å°¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("í‚¤ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		int key = scan.nextInt();
-		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		int age = scan.nextInt();
 		if(key>=140 &&age>=8) {
-			System.out.println("Å¾½Â °¡´É");
+			System.out.println("íƒ‘ìŠ¹ ê°€ëŠ¥");
 		}
 		else {
-			System.out.println("Å¾½Â ºÒ°¡´É");
+			System.out.println("íƒ‘ìŠ¹ ë¶ˆê°€ëŠ¥");
 		}
 		scan.close();
 	}
 
 	public static void five() {
-		//2°³ Á¤¼ö ÀÔ·Â ÈÄ max, same½Ã °°´Ù°í Ãâ·Â
+		//2ê°œ ì •ìˆ˜ ì…ë ¥ í›„ max, sameì‹œ ê°™ë‹¤ê³  ì¶œë ¥
 		
 		Scanner s = new Scanner(System.in);
-		System.out.println("¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		int i = s.nextInt();
-		System.out.println("¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		int age = s.nextInt();
 		if(i==age) {
-			System.out.println("µÑÀÌ °°¾Æ¿ä");
+			System.out.println("ë‘˜ì´ ê°™ì•„ìš”");
 		}
 		else {
 			if(i>age) {
-				System.out.println(i+"°¡ Ä¿¿ä");
+				System.out.println(i+"ê°€ ì»¤ìš”");
 			}
 			else {
-				System.out.println(age+"°¡ Ä¿¿ä");
+				System.out.println(age+"ê°€ ì»¤ìš”");
 			}
 		}
 		s.close();
 	}
 	public static void six() {
-		//Á¤¼ö¸¦ ÀÔ·Â¹Ş¾Æ¼­ +ÀÎ °æ¿ì È¦Â¦ ±¸ºĞ, 0ÀÌ¸é 0ÀÔ´Ï´Ù Ãâ·Â, À½¼öÀÎ °æ¿ì¿¡´Â À½ÀÇ Á¤¼öÀÔ´Ï´Ù¸¦ ÀÔ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼º
+		//ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì„œ +ì¸ ê²½ìš° í™€ì§ êµ¬ë¶„, 0ì´ë©´ 0ì…ë‹ˆë‹¤ ì¶œë ¥, ìŒìˆ˜ì¸ ê²½ìš°ì—ëŠ” ìŒì˜ ì •ìˆ˜ì…ë‹ˆë‹¤ë¥¼ ì…ë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±
 		Scanner s = new Scanner(System.in);
-		System.out.println("¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		int i = s.nextInt();
 		if(i>0) {
-			String answer = (i%2==0)?"Â¦":"È¦";
+			String answer = (i%2==0)?"ì§":"í™€";
 			System.out.println(answer);
 		}
 		else if(i==0) {
 			System.out.println("0");
 		}
 		else {
-			System.out.println("À½¼ö");
+			System.out.println("ìŒìˆ˜");
 		}
 		s.close();
 	}
 	public static void seven() {
-		//±¸¸Å½Ã °¡°İ Ãâ·Â ÇÁ·Î±×·¥, ÀÔ·Â ¹Ş¾Æ¾ß ÇÔ
-		//String[] a = ["¼ö¹Ú", "»ç°ú","¸á·Ğ","Æ÷µµ","±Ö"];
+		//êµ¬ë§¤ì‹œ ê°€ê²© ì¶œë ¥ í”„ë¡œê·¸ë¨, ì…ë ¥ ë°›ì•„ì•¼ í•¨
+		//String[] a = ["ìˆ˜ë°•", "ì‚¬ê³¼","ë©œë¡ ","í¬ë„","ê·¤"];
 		Scanner s = new Scanner(System.in);
-		System.out.println("»ç°í½ÍÀº °ÍÀ» ÀÔ·ÂÇÏ½Ã¿À \n\"¼ö¹Ú\", \"»ç°ú\",\"¸á·Ğ\",\"Æ÷µµ\",\"±Ö\"");
+		System.out.println("ì‚¬ê³ ì‹¶ì€ ê²ƒì„ ì…ë ¥í•˜ì‹œì˜¤ \n\"ìˆ˜ë°•\", \"ì‚¬ê³¼\",\"ë©œë¡ \",\"í¬ë„\",\"ê·¤\"");
 		String menu = s.nextLine();
 		switch(menu) {
-		case "¼ö¹Ú":
-			System.out.println("1000¿ø");
+		case "ìˆ˜ë°•":
+			System.out.println("1000ì›");
 			break;
-		case "»ç°ú":
-			System.out.println("1500¿ø");
+		case "ì‚¬ê³¼":
+			System.out.println("1500ì›");
 			break;
-		case "¸á·Ğ":
-			System.out.println("1800¿ø");
+		case "ë©œë¡ ":
+			System.out.println("1800ì›");
 			break;
-		case "Æ÷µµ":
-			System.out.println("1505465¿ø");
+		case "í¬ë„":
+			System.out.println("1505465ì›");
 			break;
-		case "±Ö":
-			System.out.println("123456¿ø");
+		case "ê·¤":
+			System.out.println("123456ì›");
 			break;
 		default:
-			System.out.println("Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.");
+			System.out.println("ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤.");
 			break;
 		}
 		s.close();

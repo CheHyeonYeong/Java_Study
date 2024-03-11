@@ -4,33 +4,33 @@ import java.util.Arrays;
 
 public class B09_ArrayExample {
 	public static void main(String[] args) {
-		int[] num = new int[10];
+		// int[] num = new int[10];
 		boolean[] win = {true, false, false, false, true};
 		String[] welcome = new String[] {
-				"¿À´Ã ¹¹ µå¼Ì³ª¿ä?",
-				"¿À´Ã Àú³á¿¡ ºñ¿Â´Ù°í ÇÏ³×¿ä", "Á¹¸®ÁÒ?"
+				"ì˜¤ëŠ˜ ë­ ë“œì…¨ë‚˜ìš”?",
+				"ì˜¤ëŠ˜ ì €ë…ì— ë¹„ì˜¨ë‹¤ê³  í•˜ë„¤ìš”", "ì¡¸ë¦¬ì£ ?"
 		};
 		System.out.println(welcome[0]);
 		System.out.println(welcome[1]);
 		System.out.println(welcome[2]);
-		System.out.println("¹è¿­ÀÇ ±æÀÌ : " + welcome.length);
-		System.out.println(args);  //¸Å°Ôº¯¼ö¸¦ ¹Ş¾Æ¼­ Ã³¸®ÇÔ. ¹®ÀÚ¿­·Î ¹Ş¾ÆµéÀÌ°ÚÀ½.
+		System.out.println("ë°°ì—´ì˜ ê¸¸ì´ : " + welcome.length);
+		System.out.println(args);  //ë§¤ê²Œë³€ìˆ˜ë¥¼ ë°›ì•„ì„œ ì²˜ë¦¬í•¨. ë¬¸ìì—´ë¡œ ë°›ì•„ë“¤ì´ê² ìŒ.
 		
-		System.out.println("°­È­µÈ forÀ» ÀÌ¿ëÇÑ ¹İº¹ Ã³¸®");
+		System.out.println("ê°•í™”ëœ forì„ ì´ìš©í•œ ë°˜ë³µ ì²˜ë¦¬");
 		for(String str : welcome)
 			System.out.println(str);
 		for (boolean result: win) {
-			System.out.println("½Â·ü : " +(result ? "½Â": "ÆĞ"));
+			System.out.println("ìŠ¹ë¥  : " +(result ? "ìŠ¹": "íŒ¨"));
 		}
 		
-		//¹è¿­ÀÇ ³»¿ë Ãâ·Â -> ¸Ş¼­µå¸¦ ¾È¾²¸é ±×³É ÁÖ¼Ú°ªÀÌ ³ª¿Â´Ù! ±×·¯¹Ç·Î toString() ¸Ş¼­µå¸¦ »ç¿ëÇØ¼­ ³»¿ëÀ» º¼ ¼ö ÀÖ´Ù.
+		//ë°°ì—´ì˜ ë‚´ìš© ì¶œë ¥ -> ë©”ì„œë“œë¥¼ ì•ˆì“°ë©´ ê·¸ëƒ¥ ì£¼ì†Ÿê°’ì´ ë‚˜ì˜¨ë‹¤! ê·¸ëŸ¬ë¯€ë¡œ toString() ë©”ì„œë“œë¥¼ ì‚¬ìš©í•´ì„œ ë‚´ìš©ì„ ë³¼ ìˆ˜ ìˆë‹¤.
 		System.out.println(Arrays.toString(welcome));
 		
 		String[] byeM = new String[] {"Good Bye", "see you", "bye bye"};
 		String[] byeM2 = new String[10] ;
 		
-		System.out.println("¾èÀº º¹»ç");
-		//ÁÖ¼Ú°ªÀ» ´ëÀÔÇÑ´Ù.
+		System.out.println("ì–•ì€ ë³µì‚¬");
+		//ì£¼ì†Ÿê°’ì„ ëŒ€ì…í•œë‹¤.
 		
 //		byeM2 = byeM;
 //		System.out.println(byeM2);

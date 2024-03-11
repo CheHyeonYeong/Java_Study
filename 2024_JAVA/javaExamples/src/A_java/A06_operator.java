@@ -63,11 +63,11 @@ public class A06_operator {
 		System.out.println("*** 논리 연산자 ***");
 		System.out.println(true && true);
 		System.out.println(true && false);
-		System.out.println(false && true);
-		System.out.println(false && false);
+		// System.out.println(false && true);
+		// System.out.println(false && false);
 		System.out.println("결과 : " + (a > b && a / b == 2 ));
-		System.out.println(true || true);
-		System.out.println(true || false);
+		// System.out.println(true || true);
+		// System.out.println(true || false);
 		System.out.println(false || true);
 		System.out.println(false || false);
 		

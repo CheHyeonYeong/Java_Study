@@ -2,7 +2,7 @@ package B_java;
 
 public class B03_SwitchCase2 {
 	public static void main(String[] args) {
-		//Æ¯Á¤ ¹®ÀÚ¸¦ ÀÔ·Â¹Ş´Â °æ¿ì ³»¿ë Ãâ·Â
-		//¸Ş´ºÆÇ ¸¸µé±â
+		//íŠ¹ì • ë¬¸ìë¥¼ ì…ë ¥ë°›ëŠ” ê²½ìš° ë‚´ìš© ì¶œë ¥
+		//ë©”ë‰´íŒ ë§Œë“¤ê¸°
 	}
 }

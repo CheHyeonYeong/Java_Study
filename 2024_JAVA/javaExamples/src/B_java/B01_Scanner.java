@@ -1,33 +1,33 @@
 package B_java;
 import java.util.Scanner;
-//import´Â ¿ÜºÎ¿¡ Å¬·¡½º¸¦ ÀÌ ÆÄÀÌ·À °¡Á®¿Í »ç¿ëÇÏ°Ú´Ù´Â ÀÇ¹Ì
-//java.util.Scanner : javaÆĞÅ°Áö ³»ºÎ¿¡ utilÆĞÅ°Áö¿¡ µé¾î ÀÖ´Â ScannerÅ¬·¡½º¸¦ »ç¿ëÇÏ°Ú´Ù
-//Ctrl + Shift + O : EclipseÀÇ ÀÚµ¿ import ´ÜÃàÅ° 
+//importëŠ” ì™¸ë¶€ì— í´ë˜ìŠ¤ë¥¼ ì´ íŒŒì´ë  ê°€ì ¸ì™€ ì‚¬ìš©í•˜ê² ë‹¤ëŠ” ì˜ë¯¸
+//java.util.Scanner : javaíŒ¨í‚¤ì§€ ë‚´ë¶€ì— utilíŒ¨í‚¤ì§€ì— ë“¤ì–´ ìˆëŠ” Scannerí´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•˜ê² ë‹¤
+//Ctrl + Shift + O : Eclipseì˜ ìë™ import ë‹¨ì¶•í‚¤ 
 
 public class B01_Scanner {
 
 	public static void main(String[] args) {
-		// Scanner Å¬·¡½º·Î °´Ã¼¸¦ ÇÏ³ª »ı¼º. º¯¼ö¿¡ º¸°üÇÏ¿© ÀÛ¾÷.... 
-		// Å¬·¡½º´Â µ¥ÀÌÅÍÅ¸ÀÔÀÔ´Ï´Ù. 
+		// Scanner í´ë˜ìŠ¤ë¡œ ê°ì²´ë¥¼ í•˜ë‚˜ ìƒì„±. ë³€ìˆ˜ì— ë³´ê´€í•˜ì—¬ ì‘ì—….... 
+		// í´ë˜ìŠ¤ëŠ” ë°ì´í„°íƒ€ì…ì…ë‹ˆë‹¤. 
 		Scanner scan = new Scanner(System.in);
 		
-		// Scanner´Â »ç¿ëÀÚÀÇ ÀÔ·ÂÀ» ±â´Ù¸®°í, 
-		// ÀÔ·ÂÇÑ ¹®ÀÚ¿­À» ÇÑÁÙ ÀĞ¾î µéÀÓ.
+		// ScannerëŠ” ì‚¬ìš©ìì˜ ì…ë ¥ì„ ê¸°ë‹¤ë¦¬ê³ , 
+		// ì…ë ¥í•œ ë¬¸ìì—´ì„ í•œì¤„ ì½ì–´ ë“¤ì„.
 		System.out.print(">> ");
-		String line = scan.nextLine();   // ÂüÁ¶Çü Å¸ÀÔ¿¡ º¯¼ö¿¡ "."À» ÂïÀº ÈÄ¿¡ ÇØ´ç ÂüÁ¶ÇüÀ» ÂüÁ¶.
-		System.out.println("»ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ ¹®ÀÚ¿­ : "+line);
+		String line = scan.nextLine();   // ì°¸ì¡°í˜• íƒ€ì…ì— ë³€ìˆ˜ì— "."ì„ ì°ì€ í›„ì— í•´ë‹¹ ì°¸ì¡°í˜•ì„ ì°¸ì¡°.
+		System.out.println("ì‚¬ìš©ìê°€ ì…ë ¥í•œ ë¬¸ìì—´ : "+line);
 		
-		// ÂüÁ¶Çü Å¸ÀÔ º¯¼ö¿¡ .À» Âï°í, ctrl + space·Î ±× Å¸ÀÔ¿¡ »ç¿ëÇÒ ¼ö ÀÖ´Â ±â´Éµé(ÇÔ¼öµé)À» º¼ ¼ö ÀÖÀ½.
+		// ì°¸ì¡°í˜• íƒ€ì… ë³€ìˆ˜ì— .ì„ ì°ê³ , ctrl + spaceë¡œ ê·¸ íƒ€ì…ì— ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” ê¸°ëŠ¥ë“¤(í•¨ìˆ˜ë“¤)ì„ ë³¼ ìˆ˜ ìˆìŒ.
 //		System.out.print("has next boolean : ");
 //		boolean b = scan.hasNextBoolean();
-//		System.out.println("boolean Æ÷ÇÔ ¿©ºÎ : " + b);
+//		System.out.println("boolean í¬í•¨ ì—¬ë¶€ : " + b);
 		
-		// »ç¿ëÀÚ ÀÔ·Â°ªÀ» ±â´Ù¸®¸é¼­ Á¤¼ö°ªÀ» Ã³¸®ÇÏ´Â ¹æ½Ä
-		System.out.print("¾Æ¹« Á¤¼ö °ªÀÌ³ª ÀÔ·ÂÇØ º¸¼¼¿ä>> ");
+		// ì‚¬ìš©ì ì…ë ¥ê°’ì„ ê¸°ë‹¤ë¦¬ë©´ì„œ ì •ìˆ˜ê°’ì„ ì²˜ë¦¬í•˜ëŠ” ë°©ì‹
+		System.out.print("ì•„ë¬´ ì •ìˆ˜ ê°’ì´ë‚˜ ì…ë ¥í•´ ë³´ì„¸ìš”>> ");
 		int num = scan.nextInt();
-		System.out.println("»ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ Á¤¼ö : "+num);
-		System.out.println("»ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ Á¤¼ö·Î ¸¸µç char : "+(char)num);
-		
+		System.out.println("ì‚¬ìš©ìê°€ ì…ë ¥í•œ ì •ìˆ˜ : "+num);
+		System.out.println("ì‚¬ìš©ìê°€ ì…ë ¥í•œ ì •ìˆ˜ë¡œ ë§Œë“  char : "+(char)num);
+		scan.close();	
 	}
 
 }

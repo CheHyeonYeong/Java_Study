@@ -6,14 +6,14 @@ public class B02_IfExample1 {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("а╓╪Ж ют╥б : ");
+		System.out.println("Л═∙Л┬≤ Л·┘К═╔ : ");
 		int num = scan.nextInt();
 		
 		if(num>=10) {
-			System.out.println("ют╥б а╓╪Ж╟║ 10╨╦╢ы е╘╟еЁ╙ ╟╟╢ы");
+			System.out.println("Л·┘К═╔ Л═∙Л┬≤Й╟─ 10КЁ╢К▀╓ М│╛Й╠╟К┌≤ Й╟≥К▀╓");
 		}
 		else if(num<0) {
-			System.out.printf("ют╥б а╓╪Ж╢б %d ю╫╪Жют╢о╢ы",num);
+			System.out.printf("Л·┘К═╔ Л═∙Л┬≤К┼■ %d Л²▄Л┬≤Л·┘К▀┬К▀╓",num);
 		}
 		System.out.println("close");
 		scan.close();

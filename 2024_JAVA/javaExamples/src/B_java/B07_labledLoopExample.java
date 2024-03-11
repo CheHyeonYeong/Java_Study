@@ -2,12 +2,12 @@ package B_java;
 
 public class B07_labledLoopExample {
 	public static void main(String[] args) {
-//		·çÇÁ ¾Õ¿¡ ÀÌ¸§À» ÁöÁ¤ ÈÄ : À» »ç¿ë
+//		ë£¨í”„ ì•ì— ì´ë¦„ì„ ì§€ì • í›„ : ì„ ì‚¬ìš©
 		outer: for(int i = 0; i<3;i++) {
 			for (int j =0;j<3;j++) {
 				if(j ==2) {
 					//break;
-					break outer; //·¹ÀÌºíÀÌ outerÀÎ ¹İº¹¹®À» Á¾·á
+					break outer; //ë ˆì´ë¸”ì´ outerì¸ ë°˜ë³µë¬¸ì„ ì¢…ë£Œ
 				}
 				System.out.println(i+"\t"+j);
 			}

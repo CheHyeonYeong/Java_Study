@@ -1,9 +1,9 @@
 package A_java;
 public class a02_Escape {
 	public static void main(String[] args) {
-		//escape Squence: Æ¯¼öÇÑ ±â´ÉÀ» °¡Áø ¹®ÀÚ
-		//¾Õ¿¡ \°¡ ºÙ¾îÀÖ´Â ¹®ÀÚ´Â escape ¹®ÀÚ·Î ÀÎ½ÄµÈ´Ù.
-		System.out.println("\\  \t ÅÇ ");
-		System.out.println("¾È³çÇÏ¼¼¿ä ¹İ\t°©½À´Ï´Ù ");
+		//escape Squence: íŠ¹ìˆ˜í•œ ê¸°ëŠ¥ì„ ê°€ì§„ ë¬¸ì
+		//ì•ì— \ê°€ ë¶™ì–´ìˆëŠ” ë¬¸ìëŠ” escape ë¬¸ìë¡œ ì¸ì‹ëœë‹¤.
+		System.out.println("\\  \t íƒ­ ");
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš” ë°˜\tê°‘ìŠµë‹ˆë‹¤ ");
 	}
 }

@@ -2,8 +2,8 @@ package B_java;
 
 public class B05_continue {
 	public static void main(String[] args) {
-//		¹Ýº¹¹® ³»ºÎ¿¡¼­¸¸ »ç¿ëÀÌ °¡´ÉÇÏ´Ù
-//		¹Ý¸ñ¹®¿¡¼­ continue¸¦ »ç¿ëÇÑ´Ù¸é ¾Æ·¡ ³»¿ëÀ» ½ÇÇàÇÏÁö ¾Ê°í ´ÙÀ½ ¹Ýº¹ È¸Â÷·Î ÀÌµ¿ÇÑ´Ù.-> Á¶°Ç½ÄÀ¸·Î ÀÌµ¿
+//		ë°˜ë³µë¬¸ ë‚´ë¶€ì—ì„œë§Œ ì‚¬ìš©ì´ ê°€ëŠ¥í•˜ë‹¤
+//		ë°˜ëª©ë¬¸ì—ì„œ continueë¥¼ ì‚¬ìš©í•œë‹¤ë©´ ì•„ëž˜ ë‚´ìš©ì„ ì‹¤í–‰í•˜ì§€ ì•Šê³  ë‹¤ìŒ ë°˜ë³µ íšŒì°¨ë¡œ ì´ë™í•œë‹¤.-> ì¡°ê±´ì‹ìœ¼ë¡œ ì´ë™
 	
 		for(int i =1;i<=100; i++) {
 			if(i%2==1) 

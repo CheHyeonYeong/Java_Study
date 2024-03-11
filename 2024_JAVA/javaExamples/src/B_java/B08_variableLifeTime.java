@@ -4,41 +4,41 @@ public class B08_variableLifeTime {
 	static int c;
 	int b = 5;
 	public static void main(String[] args) {
-//		- º¯¼öÀÇ ¼ö¸í
-//		- {} ºí·° ³»ºÎ¿¡¼­, ¼±¾ðµÈ º¯¼ö´Â Áö¿ª º¯¼ö·Î ºí·°À» ¹þ¾î³ª¸é »ç¶óÁø´Ù
-//		- º¯¼ö°¡ »ì¾Æ ÀÖ´Â ¹üÀ§¸¦ º¯¼öÀÇ ¿µ¿ªÀÌ¶ó°í ÇÑ´Ù. (Scope)
-//		- º¯¼öÀÇ ¿µ¿ª¸¸ °ãÄ¡Áö ¾Ê´Â´Ù¸é °°À» ÀÌ¸§ÀÇ º¯¼ö¸¦ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
-		int b = 8; //¸â¹öº¯¼ö(ÇÊµå, ¼Ó¼º)
+//		- ë³€ìˆ˜ì˜ ìˆ˜ëª…
+//		- {} ë¸”ëŸ­ ë‚´ë¶€ì—ì„œ, ì„ ì–¸ëœ ë³€ìˆ˜ëŠ” ì§€ì—­ ë³€ìˆ˜ë¡œ ë¸”ëŸ­ì„ ë²—ì–´ë‚˜ë©´ ì‚¬ë¼ì§„ë‹¤
+//		- ë³€ìˆ˜ê°€ ì‚´ì•„ ìžˆëŠ” ë²”ìœ„ë¥¼ ë³€ìˆ˜ì˜ ì˜ì—­ì´ë¼ê³  í•œë‹¤. (Scope)
+//		- ë³€ìˆ˜ì˜ ì˜ì—­ë§Œ ê²¹ì¹˜ì§€ ì•ŠëŠ”ë‹¤ë©´ ê°™ì„ ì´ë¦„ì˜ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
+		int b = 8; //ë©¤ë²„ë³€ìˆ˜(í•„ë“œ, ì†ì„±)
 		
-		System.out.println("main methodÀÇ b "+b);
+		System.out.println("main methodì˜ b "+b);
 		c =10;
-		System.out.println("class ¸â¹öº¯¼ö C : "+c);
+		System.out.println("class ë©¤ë²„ë³€ìˆ˜ C : "+c);
 		
 		B08_variableLifeTime obj = new B08_variableLifeTime();
-		System.out.println("classÀÇ bÀÌÀÚ ÀÎ½ºÅÏ½º ¸â¹öº¯¼ö : "+obj.b);
+		System.out.println("classì˜ bì´ìž ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ë³€ìˆ˜ : "+obj.b);
 
-//		- °´Ã¼ »ý¼º
-//	    - ÀÎ½ºÅÏ½º º¯¼ö´Â ¿µÇâÀ» ÁÖÁö ¾ÊÀ¸³ª, Å¬·¡½º º¯¼ö´Â ¸ðµç Å¬·¡½ºÀÇ ¿µÇâÀ» ÁØ´Ù. °øÅë º¯¼öÀÇ °³³äÀ¸·Î »ý°¢ÇÏ¸é µÈ´Ù.
+//		- ê°ì²´ ìƒì„±
+//	    - ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ëŠ” ì˜í–¥ì„ ì£¼ì§€ ì•Šìœ¼ë‚˜, í´ëž˜ìŠ¤ ë³€ìˆ˜ëŠ” ëª¨ë“  í´ëž˜ìŠ¤ì˜ ì˜í–¥ì„ ì¤€ë‹¤. ê³µí†µ ë³€ìˆ˜ì˜ ê°œë…ìœ¼ë¡œ ìƒê°í•˜ë©´ ëœë‹¤.
 	
 
 		B08_variableLifeTime obj2 = new B08_variableLifeTime();
 
 		obj2.b=100;
-		System.out.println("classÀÇ bÀÌÀÚ ÀÎ½ºÅÏ½º ¸â¹öº¯¼ö : "+obj.b);
-		System.out.println("classÀÇ bÀÌÀÚ ÀÎ½ºÅÏ½º obj2 ¸â¹öº¯¼ö : "+obj2.b);
+		System.out.println("classì˜ bì´ìž ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ë³€ìˆ˜ : "+obj.b);
+		System.out.println("classì˜ bì´ìž ì¸ìŠ¤í„´ìŠ¤ obj2 ë©¤ë²„ë³€ìˆ˜ : "+obj2.b);
 		
 		if(true) {
-			int a = 10; //Áö¿ªº¯¼ö
+			int a = 10; //ì§€ì—­ë³€ìˆ˜
 			System.out.println(a);
 			a= 7;
-//			ºÎ¸ð°¡ °¡Áö°í ÀÖ´Â °ÍÀº Ãâ·ÂÇÒ ¼ö ÀÖ´Ù.
+//			ë¶€ëª¨ê°€ ê°€ì§€ê³  ìžˆëŠ” ê²ƒì€ ì¶œë ¥í•  ìˆ˜ ìžˆë‹¤.
 			
 		}
-//		a =3; => ¾Ë ¼ö ¾ø´Ù´Â ¿¡·¯°¡ ¶á´Ù. º¯¼ö ¿µ¿ªÀÌ ´Ù¸£±â ¶§¹®
+//		a =3; => ì•Œ ìˆ˜ ì—†ë‹¤ëŠ” ì—ëŸ¬ê°€ ëœ¬ë‹¤. ë³€ìˆ˜ ì˜ì—­ì´ ë‹¤ë¥´ê¸° ë•Œë¬¸
 		for (int i =0; i<10;i++) {
 			
 		}
-//		i =10; -> ÀÌ°Íµµ ¾ÈµÊ º¯¼ö ¿µ¿ªÀÌ ´Ù¸£±â ¶§¹®
+//		i =10; -> ì´ê²ƒë„ ì•ˆë¨ ë³€ìˆ˜ ì˜ì—­ì´ ë‹¤ë¥´ê¸° ë•Œë¬¸
 		
 	}	
 }

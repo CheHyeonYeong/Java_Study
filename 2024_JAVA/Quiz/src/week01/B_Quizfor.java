@@ -3,13 +3,13 @@ package week01;
 public class B_Quizfor {
 	
 	public static void one() {
-		//100ºÎÅÍ 1±îÁö ¼ø¼­´ë·Î Ãâ·ÂÇÏ±â
+		//100ë¶€í„° 1ê¹Œì§€ ìˆœì„œëŒ€ë¡œ ì¶œë ¥í•˜ê¸°
 		for(int i = 100; i>=1 ;i--) {
 			System.out.println(i);
 		}
 	}
 	public static void two() {
-			//1~200»çÀÌÀÇ ¼ö Áß 2||3ÀÇ ¹è¼ö°¡ ¾Æ´Ñ ¼ö µéÀÇ ÃÑ ÇÕ
+			//1~200ì‚¬ì´ì˜ ìˆ˜ ì¤‘ 2||3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹Œ ìˆ˜ ë“¤ì˜ ì´ í•©
 		int sum=0;
 		for (int j=1; j<=200;j++) {
 			if (!(j%2==0 || j%3==0)) {
@@ -19,7 +19,7 @@ public class B_Quizfor {
 		System.out.println(sum);
 	}
 	public static void three() {
-		//1+(1+2)+(1+2+3) +....+(1+2+3+...+10)ÀÇ °á°ú¸¦ ±¸ÇÏ±â
+		//1+(1+2)+(1+2+3) +....+(1+2+3+...+10)ì˜ ê²°ê³¼ë¥¼ êµ¬í•˜ê¸°
 		int sum =0;
 		for (int i=1;i<=10;i++) {
 			for (int j = 1;j<=i;j++) {

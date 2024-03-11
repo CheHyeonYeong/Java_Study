@@ -7,12 +7,12 @@ public class B00_Format {
 		float b= 10.234f;
 		char c= 'T';
 		String d = "string";
-		System.out.printf("Á¤¼öÇüÀº %d, ½Ç¼öÇüÀº %.3f, ÇÑ±ÛÀÚ´Â %c, ¹®ÀÚ¿­Àº %s",a,b,c,d);
+		System.out.printf("ì •ìˆ˜í˜•ì€ %d, ì‹¤ìˆ˜í˜•ì€ %.3f, í•œê¸€ìëŠ” %c, ë¬¸ìì—´ì€ %s",a,b,c,d);
 		
 		a=100;
-		System.out.printf("\n%10d",a); //Á¦¾î¹® ¾Õ¿¡ ¼ıÀÚ´Â Ãâ·Â °ªÀÇ ÀÚ¸®¼ö, 10Ä­ Áß¿¡ d°¡ Ãâ·ÂµÇ°Ô²û ÇÔ, 10Ä­º¸´Ù ³Ğ¾îÁö¸é ±×³É ³Ğ¾îÁü
+		System.out.printf("\n%10d",a); //ì œì–´ë¬¸ ì•ì— ìˆ«ìëŠ” ì¶œë ¥ ê°’ì˜ ìë¦¬ìˆ˜, 10ì¹¸ ì¤‘ì— dê°€ ì¶œë ¥ë˜ê²Œë” í•¨, 10ì¹¸ë³´ë‹¤ ë„“ì–´ì§€ë©´ ê·¸ëƒ¥ ë„“ì–´ì§
 		
-		String name="È«±æµ¿";
+		String name="í™ê¸¸ë™";
 		int age=24;
 		String tel= "010-2345-4567";
 		int height=187;
@@ -22,9 +22,9 @@ public class B00_Format {
 		
 		System.out.println();
 
-		System.out.println("\n=====Ãâ·Â°á°ú=====");
+		System.out.println("\n=====ì¶œë ¥ê²°ê³¼=====");
 		System.out.println();
-		System.out.printf("ÀÌ¸§: %s \n³ªÀÌ: %d\nTel: %s\nÅ°: %d \n¸ö¹«°Ô:%d\nÇ÷¾×Çü: %c", 
+		System.out.printf("ì´ë¦„: %s \në‚˜ì´: %d\nTel: %s\ní‚¤: %d \nëª¸ë¬´ê²Œ:%d\ní˜ˆì•¡í˜•: %c", 
 				name, age, tel, height,weight, bloodType);
 
 	

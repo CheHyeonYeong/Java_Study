@@ -7,7 +7,7 @@ public class B06_while {
 	public static void main(String[] args) {
 		int i = 0;
 		while (i<10) {
-//			i++;  // Áõ°¨°ªÀÇ À§Ä¡¿¡ µû¶ó °á°ú°¡ ´Ù¸£´Ù.
+//			i++;  // ì¦ê°ê°’ì˜ ìœ„ì¹˜ì— ë”°ë¼ ê²°ê³¼ê°€ ë‹¤ë¥´ë‹¤.
 			System.out.println(i);
 			i++;
 		}
@@ -15,7 +15,7 @@ public class B06_while {
 //			System.out.println(i+=10000);
 //			if(i%200000==0)
 //				continue;
-//			if(i<0) //¿À¹ö ÇÃ·Î¿ì
+//			if(i<0) //ì˜¤ë²„ í”Œë¡œìš°
 //				break;
 //		}
 		
@@ -23,14 +23,14 @@ public class B06_while {
 		Scanner s = new Scanner(System.in);
 		
 //		while ((i=s.nextInt())!=0) {
-//			System.out.println("i°¡ 0ÀÌ ¾Æ´Õ´Ï´Ù.");
+//			System.out.println("iê°€ 0ì´ ì•„ë‹™ë‹ˆë‹¤.");
 //		}
 		
 		do{
-			System.out.println("¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+			System.out.println("ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤");
 		
 			i = s.nextInt();
-			System.out.println("i°¡ 0ÀÌ¾îµµ ÀÏ´Ü 1¹øÀº ½ÇÇàÇÑ´Ù.");
+			System.out.println("iê°€ 0ì´ì–´ë„ ì¼ë‹¨ 1ë²ˆì€ ì‹¤í–‰í•œë‹¤.");
 		}while(i!=0);
 		
 		

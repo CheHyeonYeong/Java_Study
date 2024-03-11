@@ -1,11 +1,11 @@
 package B_java;
 
-import java.util.Random;
+// import java.util.Random;
 
 public class B02_IfExample2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 //		Random rand = new Random();
 //		float a = rand.nextFloat();
 //		boolean b = rand.nextBoolean();
@@ -13,11 +13,11 @@ public class B02_IfExample2 {
 //		int d = rand.nextInt(10);
 //		System.out.printf("%f, %b, %d, %d", a,b,c,d);
 		
-		//Á¤¼ö ³­¼ö ¹ß»ý (0~99)
+		//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ (0~99)
 		int jumsu = (int) (Math.random()*100);
 		
-		//´ÙÁß if¹®
-		System.out.println("Á¡¼ö :"+jumsu);
+		//ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ :"+jumsu);
 		if(jumsu>=90) {
 			if (jumsu>100) {
 				System.out.println("wrong score");
@@ -36,10 +36,10 @@ public class B02_IfExample2 {
 			System.out.println("D");
 		}
 		else {
-			System.out.println("F");System.out.println("´ç½ÅÀº Àç¼ö°­ ´ë»óÀÚÀÔ´Ï´Ù.");
+			System.out.println("F");System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 		}
 		
-		//ÁßÃ¸ if¹®
+		//ï¿½ï¿½Ã¸ ifï¿½ï¿½
 		
 	}
 
