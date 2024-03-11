@@ -1,4 +1,4 @@
-package week01;
+package B_java;
 
 public class B03_SwitchCase1 {
 	public static void main(String[] args) {

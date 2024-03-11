@@ -1,4 +1,4 @@
-package week01;
+package B_java;
 
 public class B05_continue {
 	public static void main(String[] args) {

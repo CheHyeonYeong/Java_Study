@@ -1,4 +1,4 @@
-package week01;
+package B_java;
 
 public class B08_variableLifeTime {
 	static int c;

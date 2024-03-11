@@ -1,4 +1,4 @@
-package week01;
+package A_java;
 
 public class a04_varTypes {
 /*

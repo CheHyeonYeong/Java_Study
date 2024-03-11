@@ -1,3 +1,4 @@
+package A_java;
 /*
  * new prj create : 
  * 	file ->new -> java prj -> 프로젝트 이름 입력

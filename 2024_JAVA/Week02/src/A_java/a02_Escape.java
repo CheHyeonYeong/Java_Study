@@ -1,3 +1,4 @@
+package A_java;
 public class a02_Escape {
 	public static void main(String[] args) {
 		//escape Squence: 특수한 기능을 가진 문자

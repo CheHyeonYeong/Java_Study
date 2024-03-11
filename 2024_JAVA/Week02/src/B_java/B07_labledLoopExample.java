@@ -1,4 +1,4 @@
-package week01;
+package B_java;
 
 public class B07_labledLoopExample {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package week01;
+package A_java;
 
 public class A03_variable {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package week01;
+package B_java;
 import java.util.Scanner;
 //import는 외부에 클래스를 이 파이렝 가져와 사용하겠다는 의미
 //java.util.Scanner : java패키지 내부에 util패키지에 들어 있는 Scanner클래스를 사용하겠다
