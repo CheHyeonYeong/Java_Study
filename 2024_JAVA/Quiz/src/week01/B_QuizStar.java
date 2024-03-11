@@ -2,8 +2,8 @@ package week01;
 
 public class B_QuizStar {
 	private static void one() {
-		System.out.println("1¹ø");
-		//for¹®À» ÀÌ¿ëÇÏ¿© ´ÙÀ½°ú °°ÀÌ º°Âï±â ÁøÇà....
+		System.out.println("1ï¿½ï¿½");
+		//forï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½....
 		for (int i = 1;i < 6; i++) {
 			 for (int j = 1; j <= i; j++) {
 	                System.out.print("*");
@@ -12,7 +12,7 @@ public class B_QuizStar {
 		}
 	}
 	private static void two() {
-		System.out.println("2¹ø");
+		System.out.println("2ï¿½ï¿½");
 	    for (int i = 5; i >= 1; i--) {
 	        for (int j = 1; j <= i; j++) {
 	            System.out.print("*");
@@ -21,7 +21,7 @@ public class B_QuizStar {
 	    }
 	}
 	private static void three() {
-		System.out.println("3¹ø");
+		System.out.println("3ï¿½ï¿½");
 		for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= 6 - i; j++) {
                 System.out.print(" ");
@@ -34,7 +34,7 @@ public class B_QuizStar {
 	}
 
 	private static void four() {
-		System.out.println("4¹ø");
+		System.out.println("4ï¿½ï¿½");
 		for (int i = 1; i <= 5; i++) {
 
             for (int k = 1; k < i; k++) {
@@ -50,7 +50,7 @@ public class B_QuizStar {
 
 
 	private static void five() {
-		System.out.println("5¹ø");
+		System.out.println("5ï¿½ï¿½");
 		for (int i =0;i<5;i++) {
 			for (int j = 0; j < 5 - i; j++) {
                 System.out.print(" ");
@@ -62,7 +62,7 @@ public class B_QuizStar {
 		}
 	}
 	private static void six() {
-	    System.out.println("6¹ø");
+	    System.out.println("6ï¿½ï¿½");
 	    for (int i = 5; i >= 1; i--) {
 	        for (int j = 1; j <= 5 - i; j++) {
 	            System.out.print(" ");
