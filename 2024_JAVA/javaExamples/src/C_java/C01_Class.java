@@ -35,6 +35,7 @@ public class C01_Class {
             System.out.println(i+"번째 학생의 이름 : "+N.name);
             i++;
         }
+
     }
     
 }
