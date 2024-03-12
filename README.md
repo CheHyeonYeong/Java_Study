@@ -14,10 +14,14 @@
 ```
 JAVA-study
     ├── 2024_JAVA
-    |   └── FirstJAVA/src
-    |        ├──a01_Hello JAva
-    |        ├──a02_Escape
-    |        └──a03_variable
+    |   ├── javaExamples/src
+    |   │    ├──A_java : 자바 기초 및 이클립스 사용
+    |   │    ├──B_java : 자바 변수, 조건문, 반복문, 배열
+    |   │    ├──C_java : 자바 클래스, mini Poject,
+    |   │    └── TBO
+    |   │    
+    |   └── Quiz/src : 자바 공부에 필요한 알고리즘 문제 모음 zip
+    |      
     ├── TBO 추후 필요시 자바 공부에 추가
     |   ├── 
     |
