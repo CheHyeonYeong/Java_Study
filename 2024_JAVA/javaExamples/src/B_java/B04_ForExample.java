@@ -24,6 +24,17 @@ public class B04_ForExample {
 
 		String answer = "자동차";
 		Scanner scan = new Scanner(System.in);
+
+		
+		String attempt = "";
+		for (;!attempt.contentEquals(answer);) {
+			System.out.println("> ");
+			attempt = scan.nextLine();
+			if(attempt=="q"){
+				scan.close();
+			}
+		}
+		
 //		for(;;) {
 //			System.out.println("> ");
 //
@@ -34,12 +45,6 @@ public class B04_ForExample {
 //			}
 //		}
 		
-		String attempt = "";
-		for (;!attempt.contentEquals(answer);) {
-			System.out.println("> ");
-			attempt = scan.nextLine();
-		}
-		scan.close();
 		
 	}
 }
