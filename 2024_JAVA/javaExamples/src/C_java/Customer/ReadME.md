@@ -11,9 +11,9 @@
 ### 고객 관리 프로그램 기능:
 
 1. 고객 정보를 저장 : insertCustomerData()
-2. 고객 정보를 조회 : printCustomerData()
-3. 고객 정보를 수정
-4. 고객 정보를 삭제
+2. 고객 정보를 조회 : printCustomerData(int index)
+3. 고객 정보를 수정 : updateCustomerData(int index)
+4. 고객 정보를 삭제 : deleteCustomerData(int index)
 
 ### 인터페이스 설정(메뉴):
 

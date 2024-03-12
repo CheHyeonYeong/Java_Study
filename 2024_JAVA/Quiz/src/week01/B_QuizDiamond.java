@@ -104,25 +104,34 @@ public class B_QuizDiamond {
         boolean flag = true; //true : 삼각형, false : 역삼각형
 
         
-        System.out.println("*");
+        
         for (int i = 0;i<dan ;i++){
-            //flag 기법, boolean 알고리즘, 특정 내용만 바뀌게 된다~
-            for(int j =0; j<sp;j++){
+
+            for (int j = 0; j < sp; j++) {
                 System.out.print(" ");
             }
-            
-            System.out.print("*");
-            for (int j = 0; j<st-1;j++){
-                System.out.print(" ");
+            if (i == 0 || i == dan - 1) {
+                
+                
+                System.out.println("*");
+            } 
+
+            else {
+                
+                System.out.print("*");
+
+                for (int j = 0; j < st - 1; j++) {
+                    System.out.print(" ");
+                }
+                System.out.println("*");   
             }
-            System.out.println("*");
             if(i==(dan/2)){flag= false;}
             if(flag){sp -=1; st +=2;}
             else{sp+=1;st-=2;}
             System.out.println();
         }
         
-        System.out.println("*");
+        
         s.close();
 
     }
@@ -137,24 +146,30 @@ public class B_QuizDiamond {
         int st =1; //별
         boolean flag = true; //true : 삼각형, false : 역삼각형
 
-        System.out.println("*");
+        
         for (int i = 0;i<line ;i++){
-            //flag 기법, boolean 알고리즘, 특정 내용만 바뀌게 된다~
-            for(int j =0; j<sp;j++){
-                System.out.print(" ");
-            }
-            
-            System.out.print("*");
-            for (int j = 0; j<st-1;j++){
-                System.out.print("$");
-            }
-            System.out.println("*");
-            if(i==(line/2)){flag= false;}
-            if(flag){sp -=1; st +=2;}
-            else{sp+=1;st-=2;}
-            System.out.println();
+			// 여백처리... 
+			for (int j = 0; j < sp; j++) {
+				System.out.print(" ");
+			}
+			// 별찍기... 
+			for (int j = 0; j < st; j++) {
+				if(j == 0 || j == st -1)
+					System.out.print("*");
+				else {
+					if (j%2 == 0) System.out.print("$");
+					else System.out.print(" ");
+				}
+			}
+			System.out.println();
+			if(i == (line/2)) flag = false; //반전
+			if(flag) {
+				sp -= 1; st += 2;
+			}else {
+				sp += 1; st -= 2;
+			}
         }
-        System.out.println("*");
+        
         scna.close();
 
 
@@ -162,12 +177,12 @@ public class B_QuizDiamond {
     
     public static void main(String[] args) {
      
-		// diamond();
+		diamond();
 		 
 		// diamondtwo();	
         // flagArg();   
-        // plaindiamond();   
-        dalerdiamond();
+        plaindiamond();   
+        // dalerdiamond();
     }
 
     
