@@ -10,12 +10,11 @@ public class C_QuizPM {
         //소수 출력 1~100
         int[] pNum = new int[100];
         int count =-1;
+
         for (int i =2; i<=100;i++){
             boolean flag = true;
             for (int j =2;j<i;j++){
-                if(i%j==0){
-                    flag=false;
-                }
+                if(i%j==0){flag=false;}
             }
             if(flag){
                 count++;
@@ -25,8 +24,8 @@ public class C_QuizPM {
         for(int i =0;i<=count;i++){
             System.out.print(pNum[i]+"\t");
         }
-
     }
+
     static void two(){
         //단어 거꾸로 출력하기
         Scanner s = new Scanner(System.in);
@@ -36,8 +35,8 @@ public class C_QuizPM {
             System.out.print(str.charAt(i));
         }
         s.close();
-
     }
+    
     static void three(){
         //로또 번호 (1~45), 6개 번호 출력, 중복 x, sort 필요
 

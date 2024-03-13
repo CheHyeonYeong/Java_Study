@@ -102,24 +102,16 @@ public class B_QuizDiamond {
         int sp = dan /2; //여백
         int st =1; //별
         boolean flag = true; //true : 삼각형, false : 역삼각형
-
-        
-        
         for (int i = 0;i<dan ;i++){
 
             for (int j = 0; j < sp; j++) {
                 System.out.print(" ");
             }
             if (i == 0 || i == dan - 1) {
-                
-                
                 System.out.println("*");
             } 
-
             else {
-                
                 System.out.print("*");
-
                 for (int j = 0; j < st - 1; j++) {
                     System.out.print(" ");
                 }
@@ -130,8 +122,6 @@ public class B_QuizDiamond {
             else{sp+=1;st-=2;}
             System.out.println();
         }
-        
-        
         s.close();
 
     }
