@@ -6,12 +6,13 @@ public class Customer {
     static final int MAX = 100;
     //고객 정보를 저장할 변수를 배열로 선언 : 이름, 성별, 이메일, 출생년도
 
-    String name;
-    String gender;
-    String email;
-    int birthYear; 
+    private String name;
+    private String gender;
+    private String email;
+    private int birthYear; 
     Scanner s = new Scanner(System.in);
-
+    //generate class super~ 라는 것으로 생성자를 자동으로 만들 수 있다.
+    //getter, setter을 직접 만들 수 있다. 
     Customer(){
         //이름, 성별, 이메일, 출생년도 입력 받음
         System.out.print("이름 : " );
