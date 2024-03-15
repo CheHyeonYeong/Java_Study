@@ -1,4 +1,4 @@
-package obj.inhereritance;
+package C_java.inhereritance;
 
 public class BadExample {
     //같은 내용을 자꾸 써버린다.

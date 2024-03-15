@@ -1,4 +1,4 @@
-package obj.inhereritance;
+package C_java.inhereritance;
 
 public class objectExample {
     public static void main(String[] args) {

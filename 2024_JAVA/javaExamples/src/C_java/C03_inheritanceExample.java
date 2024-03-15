@@ -1,7 +1,7 @@
 package C_java;
 
+import C_java.inhereritance.Person;
 import obj.Student;
-import obj.inhereritance.Person;
 
 public class C03_inheritanceExample {
 

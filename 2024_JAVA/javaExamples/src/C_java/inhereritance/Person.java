@@ -1,4 +1,4 @@
-package obj.inhereritance;
+package C_java.inhereritance;
 
 public class Person {
     //이름, 나이, 키, 몸무게, gender...
@@ -27,6 +27,10 @@ public class Person {
         this.name= name;
         this.age=age;
     }
+
+	public void walk(){
+		System.err.println(name+"은 잘 걸어가요");
+	}
     public String getDetails(){
         return String.format("이름 : %s\t나이 : %d\t height : %f\tweight : %f", name, age, height, weight);
     }
@@ -67,4 +71,6 @@ public class Person {
 	public String toString() {
 		return "Person [name="+name+", age="+age+"]";
 	}
+
+
 }
