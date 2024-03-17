@@ -1,4 +1,4 @@
-package week01;
+package week01.study;
 
 
 class Circle {
@@ -26,7 +26,7 @@ public class Pizza extends Circle{
         super(radius);
         this.name = "name";
     }
-    
+
     public String getName() {
         return this.name;
     }
@@ -52,7 +52,7 @@ class Menu extends Pizza{
 
     Menu(String name ,int radius) {
         super(radius,name);
-        
+
     }
 
 
