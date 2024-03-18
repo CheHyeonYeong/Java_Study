@@ -115,6 +115,7 @@ public class D_Quiz_Inner {
             }
         },tv);
 
+    
 
         Machine computer = new Machine("computer"){
             @Override
