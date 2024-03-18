@@ -15,6 +15,21 @@ Machine이라는 클래스를 상속해서 에어컨, 컴퓨터, TV등의 여러
   TV, 컴퓨터, 에어컨 -> Machine을 상속받아서 이름만 동작하고, 일부 메서드는 알아서 작성하세요!!!
 
   Main메서드가 있는 클래스를 생성하여 테스트 해보세요 ~~~ 
+
+  Machine ----  TV
+              |--  컴퓨터
+              |--  에어컨
+
+Machine 클래스
+    - 멤버 변수 : name
+    - 메서드 : machineWork
+             -> 리모컨을 이용한 On/Off기능의 동작
+
+리모컨 인터페이스 
+    - On 
+    - Off
+
+ TV, 컴퓨터, 에어컨 등에서 machineWork를 사용하면 리모컨의 On/Off기능을 통해서 꺼지고, 켜지는 내용이 출력되게 만들어 줌
  */
 
  interface RemoteMachine{
@@ -24,40 +39,81 @@ Machine이라는 클래스를 상속해서 에어컨, 컴퓨터, TV등의 여러
 
 class Machine {
     String name;
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
     public Machine(String name){
         this.name = name;
     }
+
     public void machineWork(RemoteMachine m ){
         System.out.println(name + "을(를) 조작합니다.");
-
-            m.trunON();
-            m.trunOff();
-        
-        
+        m.trunON();
+        m.trunOff();       
+    } 
+    public static void machineWork(RemoteMachine m , Machine t){
+        m.trunON();
+        m.trunOff();       
     }
+}
+class  TV extends Machine {
+    public TV(String name){
+        super(name);
+    }
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+    public void show(){
+        System.out.println("방송 중입니다.");
+    }
+    
+
     
 }
 
 public class D_Quiz_Inner {
     public static void main(String[] args) {
-        Machine tv = new Machine("TV"){
-            @Override
-            public void machineWork(RemoteMachine m) {
-                super.machineWork(m);
-            }
-        };
-        tv.machineWork(new RemoteMachine() {
+        // Machine tv = new Machine("TV"){
+        //     @Override
+        //     public void machineWork(RemoteMachine m) {
+        //         super.machineWork(m);
+        //     }
+        // };
+        // tv.machineWork(new RemoteMachine() {
+        //     @Override
+        //     public void trunON() {
+        //         System.out.println(tv.name + "전원이 켜집니다.");
+                
+        //     }
+        //     @Override
+        //     public void trunOff() {
+        //         System.out.println(tv.name +"전원이 꺼집니다.");
+                
+        //     }
+        // });
+        Machine tv = new TV("TV");
+        Machine.machineWork(new RemoteMachine() {
             @Override
             public void trunON() {
-                System.out.println(tv.name + "전원이 켜집니다.");
+                System.out.println(tv.getName()+"를 켭니다");
                 
             }
             @Override
             public void trunOff() {
-                System.out.println(tv.name +"전원이 꺼집니다.");
-                
+                System.out.println(tv.getName()+"를 끕니다");
             }
-        });
+        },tv);
 
 
         Machine computer = new Machine("computer"){
