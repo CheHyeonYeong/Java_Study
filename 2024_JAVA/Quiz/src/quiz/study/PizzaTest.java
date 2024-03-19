@@ -1,4 +1,4 @@
-package week01.study;
+package quiz.study;
 
 public class PizzaTest {
     public static void main(String[] args) {

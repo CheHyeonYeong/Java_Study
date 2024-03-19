@@ -1,4 +1,4 @@
-package week01;
+package quiz;
 
 public class Quiz_shop_240315 {
 
