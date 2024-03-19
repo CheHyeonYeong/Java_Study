@@ -1,12 +1,14 @@
 package Homework;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Customer {
+
     static final int MAX = 100;
     //고객 정보를 저장할 변수를 배열로 선언 : 이름, 성별, 이메일, 출생년도
 
-    private String name;
+    String name;
     private String gender;
     private String email;
     private int birthYear; 
@@ -30,6 +32,11 @@ public class Customer {
         this.email = email;
         this.birthYear = birthYear;
     }
+    public String getName() {
+        return name;
+    }
+
+    
     void printCustomerData(){
         //고객 정보 출력
         System.out.println("==========Customer==========");
