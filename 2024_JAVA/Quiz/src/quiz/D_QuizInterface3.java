@@ -5,7 +5,7 @@ abstract class Shape {
     protected int y;
 
     public void showPosition(){
-        System.out.printf("x 좌표 : %d, y 좌표 : %d",x,y);
+        System.out.printf("x 좌표 : %d, y 좌표 : %d\n",x,y);
     }
     public abstract double getArea();
     
@@ -58,7 +58,7 @@ class Triangle extends Shape{
 
     @Override
     public double getArea() {
-        double result = (x-z)*(y-z);
+        double result = (x-z)*(y-z)/2;
         return result;
     }
 }
@@ -67,5 +67,12 @@ public class D_QuizInterface3 {
 
     public static void main(String[] args) {
         //도형은 좌표를 이용해 각 도형의 요소들을 나타낼 수 있는 넓이를 구하는 방식은 도형별로 다르다.
+
+        Triangle t = new Triangle(10, 5);
+        Rectange r = new Rectange(10, 10);
+        System.out.println(t.getArea());
+        System.out.println(r.getArea());
+        t.showPosition();
+        r.showPosition();
     }
 }

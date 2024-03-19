@@ -1,4 +1,4 @@
-package week01;
+package quiz;
 
 /*
  * ### 만능 리모컨 

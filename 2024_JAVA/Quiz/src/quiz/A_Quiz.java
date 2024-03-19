@@ -1,4 +1,4 @@
-package week01;
+package quiz;
 
 public class A_Quiz {
 	

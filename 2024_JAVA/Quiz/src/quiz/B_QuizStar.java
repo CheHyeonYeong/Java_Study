@@ -1,4 +1,4 @@
-package week01;
+package quiz;
 
 public class B_QuizStar {
 	private static void one() {

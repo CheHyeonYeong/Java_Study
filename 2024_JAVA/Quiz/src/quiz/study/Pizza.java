@@ -1,4 +1,4 @@
-package week01.study;
+package quiz.study;
 
 
 class Circle {

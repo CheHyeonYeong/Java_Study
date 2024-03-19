@@ -1,4 +1,4 @@
-package week01;
+package quiz;
 interface Feed {
     String getFeed();
 }
