@@ -64,6 +64,48 @@ public class D15_stringEx {
         str = str.replaceFirst("naver", "korea");
         System.out.println(str);
 
+        //8. lastIndexOf : 해당 문자열을 뒤에서부터 찾아서 위치를 반환
+        str = "abcd     dcba";
+        System.out.println("IndexOf(d) : "+ str.indexOf('d'));
+        System.out.println("lastIndexOf(d) : " + str.lastIndexOf('d'));
+
+        //9. toUpperCase, toLowerCase
+
+        //10. trim : 문자열 바깥 쪽 공백 제고
+
+        String id = "           abe             123";
+        String id2 = " abc             123     ";
+        System.out.println("before1 : "+id);
+        System.out.println("before2 : "+id2);
+
+        System.out.println("equals : " + id.equals(id2));
+
+        id=id.trim();
+        id2=id2.trim();
+
+        System.out.println("after1 : "+id);
+        System.out.println("after2 : "+id2);
+
+        System.out.println("equals : " + id.equals(id2));
+
+        //11. format : 서식 문자열을 이용하여 문자열을 만들어서 반환
+
+        str = String.format("%d : %d : %d", 12,13,15);
+        System.out.println(str);
+        
+        //12. endWith : 지정 문자로 끝나는지 검사 (확장자 체크할 때 사용)
+        str = "오늘 할 일.txt";
+        if(str.endsWith(".txt")){
+            System.out.println("확장자가 올바른 텍스트 파일입니다");
+        }
+        else if(str.endsWith(".html")|str.endsWith(".htm")){
+            System.out.println("웹페이지 입니다");
+        }
+        else{
+            System.out.println("텍스트 파일이 아닙니다.");
+        }
+
+
     }
         
   
