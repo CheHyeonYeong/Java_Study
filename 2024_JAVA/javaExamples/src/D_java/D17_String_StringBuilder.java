@@ -22,7 +22,5 @@ public class D17_String_StringBuilder {
         }
         end = System.currentTimeMillis();
         System.out.println("StirngBuilder : " +(end-start)*0.001+"초");
-
     }
-
 }
