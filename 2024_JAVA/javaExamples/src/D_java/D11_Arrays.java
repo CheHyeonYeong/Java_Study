@@ -50,6 +50,7 @@ public class D11_Arrays {
 
         // 배열 내부 데이터의 인덱스를 탐색하는 메서드
         int index = Arrays.binarySearch(score, 75);
+        index = Arrays.asList(score).indexOf(75);
         System.out.println("75가 있는 인덱스 번호 : "+index);
 
         int[] score3 = Arrays.copyOf(score, score.length);
