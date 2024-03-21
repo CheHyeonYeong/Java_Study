@@ -1,4 +1,4 @@
-package quiz;
+package quiz.D_quiz;
 interface Feed {
     String getFeed();
 }

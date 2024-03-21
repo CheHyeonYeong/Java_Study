@@ -26,7 +26,7 @@ public class E03_Hash {
     }
     public static int solution2(int[] scoville, int k){
         int count = 0;
-        PriorityQueue<Integer> st = new PriorityQueue<>();
+        PriorityQueue<Integer> st = new PriorityQueue<>() ;
         for (int s : scoville) {
             st.offer(s);
         }

@@ -1,4 +1,4 @@
-package quiz;
+package quiz.E_quiz;
 
 public class Quiz_shop_240315 {
 

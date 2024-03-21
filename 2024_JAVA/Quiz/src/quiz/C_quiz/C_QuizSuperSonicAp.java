@@ -1,4 +1,4 @@
-package quiz;
+package quiz.C_quiz;
 
 class Airplane {
     // Airplane은 멤버 변수로 name을 가지고 있습니다. 

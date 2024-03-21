@@ -1,4 +1,4 @@
-package quiz;
+package quiz.A_quiz;
 
 public class A_Quiz {
 	

@@ -1,4 +1,4 @@
-package quiz;
+package quiz.B_quiz;
 
 import java.util.Random;
 

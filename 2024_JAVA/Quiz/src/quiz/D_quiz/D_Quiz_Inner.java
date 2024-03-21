@@ -1,4 +1,4 @@
-package quiz;
+package quiz.D_quiz;
 
 /*
  * ### 만능 리모컨 

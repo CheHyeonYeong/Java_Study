@@ -1,4 +1,4 @@
-package quiz;
+package quiz.C_quiz;
 
 import java.util.Arrays;
 import java.util.Random;

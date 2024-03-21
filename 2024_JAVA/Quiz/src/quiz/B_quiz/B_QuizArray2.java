@@ -1,4 +1,4 @@
-package quiz;
+package quiz.B_quiz;
 
 public class B_QuizArray2 {
     //총합과 값

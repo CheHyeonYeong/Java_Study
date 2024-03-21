@@ -1,4 +1,4 @@
-package quiz;
+package quiz.D_quiz;
 
 abstract class Shape {
     protected int x;

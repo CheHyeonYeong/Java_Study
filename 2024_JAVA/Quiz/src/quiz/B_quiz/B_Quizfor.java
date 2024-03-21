@@ -1,4 +1,4 @@
-package quiz;
+package quiz.B_quiz;
 
 public class B_Quizfor {
 	
