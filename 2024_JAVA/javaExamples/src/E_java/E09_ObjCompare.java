@@ -28,5 +28,4 @@ public class E09_ObjCompare {
             System.out.println(dog);
         }
     }
-
 }
