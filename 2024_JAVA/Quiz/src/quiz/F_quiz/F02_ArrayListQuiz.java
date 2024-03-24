@@ -1,13 +1,14 @@
 package quiz.F_quiz;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class F02_ArrayListQuiz {
 
-    public static void main(String[] args) {
-		
+	public static void main(String[] args) {
 		//1. User를 저장하는 List를 선언하세요
-
+		List<User> people = new ArrayList<>();
 
 		Scanner scan = new Scanner(System.in);
 
@@ -23,6 +24,18 @@ public class F02_ArrayListQuiz {
 				Scanner를통해 이름과, 나이를 입력받고 User객체에 저장합니다.
 				그리고 User객체를 list에 추가하세요.
 				*/
+				scan.nextLine();
+				System.out.println("====== 회원 정보 입력 ======");
+				System.out.print("회원 이름 입력 : ");
+				String name = scan.nextLine();
+
+				System.out.print("회원 나이 입력 : ");
+				int age = scan.nextInt();
+				
+				User user = new User(name, age);
+				people.add(user);
+				System.out.println("회원 정보 정상 처리");
+				
 
 			}else if(menu == 2) {
 				
@@ -32,7 +45,11 @@ public class F02_ArrayListQuiz {
 				 * 꺼낸 하나의 객체에서  공개된 메서드를 통해 이름, 나이를 출력하세요.
 				 * 
 				 */
-				
+				for (int i = 0; i < people.size(); i++) {
+					User user = people.get(i);
+//							System.out.printf("[ 이름 : %s , 나이 : %d ]\n", user.getName(),user.getAge());
+					System.out.println(user.toString());
+				}
 				System.out.println("==========================");
 
 
@@ -64,7 +81,19 @@ public class F02_ArrayListQuiz {
 				 * 3. 입력받은 이름과 동일한 이름이 있다면 people객체를 삭제
 				 * 
 				 */
-			
+				// 1.
+				System.out.print("삭제할 이름을 입력하세요 : ");
+				String deleteName = scan.nextLine();
+				for(int i = 0; i < people.size(); i++) {
+					//2.
+					User user = people.get(i);
+					String name = user.getName();
+					//3.
+					if(name.equals(deleteName)) {
+						people.remove(i);
+					}
+				}
+
 			}else if(menu == 5) {
 				scan.close();
 				System.out.println("프로그램을 종료합니다.");
@@ -73,6 +102,43 @@ public class F02_ArrayListQuiz {
 			
 		}
 
-	} 
+	}
 
+}
+
+
+class User {
+	// 멤버변수, 멤버 메서드, 생성자
+	private String name;
+	private int age;
+	
+	// 생성자
+	public User() {}
+
+	public User(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	// getter, setter
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	@Override
+	public String toString() {
+		return "[ 이름 : "+name+", 나이 : "+age+"]";
+	}
 }
