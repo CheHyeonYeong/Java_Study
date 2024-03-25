@@ -29,4 +29,23 @@ public class Student extends Person{
 	public void study(){
 		System.out.println(name +"is study ");
 	}
+	public String getName() {
+		return this.name;
+	}
+
+	public String getStudentId() {
+		return studentId;
+	}
+
+	public String getMajor() {
+		return major;
+	}
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
+	}
+
+	public void setMajor(String major) {
+		this.major = major;
+	}
 }
