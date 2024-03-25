@@ -79,7 +79,6 @@ public class F02_ArrayListQuiz {
 				 * 1. scan 을 통해 삭제할 이름을 입력 받으세요.
 				 * 2. list 의 길이 만큼 회전하면서 객체에서 name을 꺼내 비교합니다.
 				 * 3. 입력받은 이름과 동일한 이름이 있다면 people객체를 삭제
-				 * 
 				 */
 				// 1.
 				System.out.print("삭제할 이름을 입력하세요 : ");
