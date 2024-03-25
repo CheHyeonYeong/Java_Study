@@ -53,20 +53,24 @@ public class F03_PhoneBook {
                 System.out.print("이름을 입력하세요: ");
                 String name = sc.nextLine();
                 book.addPhoneNumber(group, phoneNumber, name);
+                break;
             case 4:
                 System.out.print("검색할 전화번호 일부를 입력하세요: ");
                 String partialNumber = sc.nextLine();
                 book.searchByPartialNumber(partialNumber);
+                break;
             case 5:
                 System.out.print("검색할 이름을 입력하세요: ");
                 String searchName = sc.nextLine();
                 book.searchByName(searchName);
+                break;
             case 6:
                 System.out.println("프로그램을 종료합니다.");
                 book.savePhoneBook();
                 sc.close();
                 System.exit(0);
             default:
+                System.out.println("메뉴 선택을 잘못했습니다");
                break;
             }
          }
@@ -77,8 +81,13 @@ public class F03_PhoneBook {
 class PhoneBook implements Serializable{
     private static final long serialVersionUID =1L;
     private HashMap<String, HashMap<String, String>> phoneBook;
+    File saveFile = null;
+    String svaePath = "saveFile/phonebook.sav";
 
     public PhoneBook() {
+
+        //객체 생성시 파일에 저장된 내용을 불러오는 동작!!
+        //파일이 존재하면 내용을 불러오고 파일이 없다면 생성한다.
         this.phoneBook = new HashMap<>();
     }
 
@@ -98,20 +107,26 @@ class PhoneBook implements Serializable{
         for(String gString: phoneBook.keySet()){
             System.out.println("그룹 : "+gString);
             HashMap<String, String> numbers = phoneBook.get(gString);
-            for(String numString : numbers.keySet()){
-                System.out.println("전화번호 : "+numString+"이름 : "+numbers.get(numString));
+            if(numbers.keySet().size()==0){
+                System.out.println("비어있음");
             }
-
+            else{
+                for(String numString : numbers.keySet()){ //전화번호가 키로 쓰고, value가 이름이다   
+                    System.out.println("전화번호 : "+numString+"이름 : "+numbers.get(numString));
+                }
+            }
         }
    }
    void addPhoneNumber(String group, String number, String name){
         if(phoneBook.containsKey(group)){
             phoneBook.get(group).put(number, name);
+            // 중복 여부를 확인해야 한다.
+
             savePhoneBook();
             System.out.println("전화번호 "+number+"를 그룹 "+group+"에 추가했습니다.");
         }
         else{
-            System.out.println("존재하지 않는 긃입니다.");
+            System.out.println("존재하지 않는 그룹입니다.");
         }
    }
    public void searchByPartialNumber(String partialNumber) {
