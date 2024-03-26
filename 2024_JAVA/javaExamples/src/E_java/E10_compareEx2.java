@@ -35,7 +35,7 @@ public class E10_compareEx2 {
                 else{
                     return 0; //set인 경우 0이 리턴되면 중복으로 간주 -> 들어가지 않는다.
                 }
-                return 0;
+
             };
         });
 
