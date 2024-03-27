@@ -76,7 +76,7 @@ public class H03_ThreadEx {
         t4.iscontinue = true;
         try {
             Thread.sleep(20);
-        } catch (Exception e) {        }
+        } catch (Exception e) {}
 
         t4.isbreak = true;
         t5.isbreak = true;
