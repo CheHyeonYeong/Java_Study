@@ -21,7 +21,7 @@ class SmartPhoneGame{
         return level;
     }
     public synchronized void increaseLevel(){
-        synchronized(this){
+        synchronized(this){//동기화 블럭
             while (true) {
                 this.level ++;
                 try {
@@ -30,9 +30,17 @@ class SmartPhoneGame{
                     
                 //현재 스레드의 이름과 레벨 출력
                 System.out.println(Thread.currentThread().getName()+" LEVEL : "+this.level);
-                    if(this.level%10==0){
+                    
+                    if(this.level==5){
+                        notifyAll(); //현재 대기중인 모든 스레드를 실행상태로 전환
+                        try {
+                            wait(); //현재 실행중인 스레드를 대기 상태로 전환
+
+                            //notify () : 현재 대기중인 스레드를 대기 상태로 변환, 직접 지정 불가능!
+                        } catch (InterruptedException e) {}
                         break;
-                }
+                    }
+                    if(this.level%10==0){break;}
             }
         }
         
