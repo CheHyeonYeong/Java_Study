@@ -10,6 +10,8 @@ public class I04_UDPServer {
             //data gram Socket 객체 생성
             DatagramSocket socket = new DatagramSocket(9500);
 
+            socket.setBroadcast(true);
+
             DatagramPacket inPacket;
             byte[] inMsg = null;
 
