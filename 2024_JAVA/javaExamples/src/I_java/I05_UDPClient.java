@@ -17,7 +17,7 @@ public class I05_UDPClient {
             BufferedReader sysin = new BufferedReader(new InputStreamReader(System.in));
             
             //server ip
-            InetAddress serverip = InetAddress.getByName("127.0.0.1");
+            InetAddress serverip = InetAddress.getByName("230.0.0.1");
             while (true) {
                 //one line read
 
@@ -27,7 +27,7 @@ public class I05_UDPClient {
                 byte[] msg1 = data.getBytes();
 
                 //server transport (data, data length, server ip, port number)
-                DatagramPacket outpacket = new DatagramPacket(msg1, msg1.length, serverip, 9500);
+                DatagramPacket outpacket = new DatagramPacket(msg1, msg1.length, serverip, 9000);
                 dataSocket.send(outpacket);
 
                 //socket close

@@ -3,14 +3,32 @@ package I_java;
 import java.net.DatagramSocket;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
+import java.net.MulticastSocket;
 
 public class I04_UDPServer {
     public static void main(String[] args) {
+        
         try {
-            //data gram Socket 객체 생성
-            DatagramSocket socket = new DatagramSocket(9500);
+            
+            //멀티 캐스트
+        
+            String multicastAddr = "230.0.0.1";
+            InetAddress multicastGroup = InetAddress.getByName(multicastAddr);
 
-            socket.setBroadcast(true);
+            MulticastSocket socket = new MulticastSocket(9000);
+            
+            socket.joinGroup(multicastGroup);
+
+            //leaveGroup()을 사용하면 멀티캐스트 그룹 해제가 된다!
+
+
+            //data gram Socket 객체 생성
+            // DatagramSocket socket = new DatagramSocket(9500);
+
+            // socket.setBroadcast(true); //브로드 캐스트
+            
+
+
 
             DatagramPacket inPacket;
             byte[] inMsg = null;
