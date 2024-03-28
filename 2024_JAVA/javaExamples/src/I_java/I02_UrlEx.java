@@ -81,9 +81,7 @@ public class I02_UrlEx {
                         new InputStreamReader(url.openStream())
                     );
                     while ((readline = br.readLine())!= null) {
-                        System.out.println(readline);
-                        
-                    }
+                        System.out.println(readline);}
                 }catch(IOException e){  }
                 finally{
                     try {
@@ -97,9 +95,6 @@ public class I02_UrlEx {
             } catch (Exception e) {
                 // TODO: handle exception
             }
-
-
-
         } catch (IOException e) {
             System.out.println(e.getMessage());
             
