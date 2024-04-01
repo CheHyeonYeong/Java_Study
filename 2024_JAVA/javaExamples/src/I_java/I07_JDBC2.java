@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-public class I06_JDBC2 {
+public class I07_JDBC2 {
 
     public static Scanner s = new Scanner(System.in);
 
