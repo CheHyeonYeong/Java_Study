@@ -7,44 +7,48 @@ public class I06_JDBC {
     public static void main(String[] args) {
         // JCBC 연동 테스트
       
-      // 데이터베이스 연결 객체(Connection 객체)
-      Connection conn = null; //비어있는 객체선언.
-      
-      //checkedException  : SQLException
-      try {
-         // 1. 드라이버 로드
-         // MySQL 사용 드라이버
-         //MySQL 6.xx 버전 이전 :  com.mysql.jdbc.Driver
-         //MySQL 6.xx 버전 이후 :  com.mysql.cj.jdbc.Driver
-         Class.forName("com.mysql.cj.jdbc.Driver");
-         
-         // 2. Connection 객체 생성 - DriverManger
-         //MySQL 6.xx 미만인 경우 jdbc:mysql://호스트이름:포트번호/DB이름
-         //MySQL 6.xx 이후인 경우 jdbc:mysql://호스트이름:포트번호/DB이름?serverTimezone=UTC
-         // 서울 UTC 값 : Asia/Seoul
-         //conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?serverTimezone=Asia/Seoul","root","root1234")
-         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "root", "root");
-         System.out.println(conn);
-         System.out.println("데이터베이스 접속 성공.");
-         
-         // Insert, Update, Delete - executeUpdate() 메서드 사용 - 반환타입이 int
-         // 3.Statement 객체 생성. createStatement
-         Statement stmt = conn.createStatement();
-         
-         //4. SQL 작성
-         String sql1 = "insert into Persons (firstname, lastname, age, city)"
-               + "values('jdbcTest','testuser13',24,'Seoul')";
-         
-         // 5. Statement 객체를 통해서 작성된 SQL을 실행
-         int result = stmt.executeUpdate(sql1);
-         // 성공시  : 1
-         // 실패시  : 0
-         if(result != 0) {
-            System.out.println("SQL성공");
-         }else {
-            System.out.println("SQL실패");
-         }
-         
+        // 데이터베이스 연결 객체(Connection 객체)
+        Connection conn = null; //비어있는 객체선언.
+        
+        //checkedException  : SQLException
+        try {
+            // 1. 드라이버 로드
+            // MySQL 사용 드라이버
+            //MySQL 6.xx 버전 이전 :  com.mysql.jdbc.Driver
+            //MySQL 6.xx 버전 이후 :  com.mysql.cj.jdbc.Driver
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            
+            // 2. Connection 객체 생성 - DriverManger
+            //MySQL 6.xx 미만인 경우 jdbc:mysql://호스트이름:포트번호/DB이름
+            //MySQL 6.xx 이후인 경우 jdbc:mysql://호스트이름:포트번호/DB이름?serverTimezone=UTC
+            // 서울 UTC 값 : Asia/Seoul
+            //conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?serverTimezone=Asia/Seoul","root","root1234")
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "root", "root");
+            System.out.println(conn);
+            System.out.println("데이터베이스 접속 성공.");
+            
+            // Insert, Update, Delete - executeUpdate() 메서드 사용 - 반환타입이 int
+            // 3.Statement 객체 생성. createStatement
+            Statement stmt = conn.createStatement();
+            
+            //4. SQL 작성
+            String sql1 = "insert into Persons (firstname, lastname, age, city)"
+                + "values('jdbcTest','testuser13',24,'Seoul')";
+            String sql2 = "update persons set firstname = '순신', lastname = '이'"+"where id = 14";
+            String sql3 = "Delete from persons where id = 14";
+
+            // 5. Statement 객체를 통해서 작성된 SQL을 실행
+            //  int result = stmt.executeUpdate(sql1);
+            // int result = stmt.executeUpdate(sql2);
+            int result = stmt.executeUpdate(sql3);
+            // 성공시  : 1
+            // 실패시  : 0
+            if(result != 0) {
+                System.out.println("SQL성공");
+            }else {
+                System.out.println("SQL실패");
+            }
+            
       } catch (ClassNotFoundException e) {
          System.out.println("드라이버 로드 실패");
       }catch (SQLException sqle) {
