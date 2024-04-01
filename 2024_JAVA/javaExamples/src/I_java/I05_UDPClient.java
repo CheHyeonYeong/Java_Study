@@ -43,4 +43,3 @@ public class I05_UDPClient {
         }
     }
 }
-1321321321313213
