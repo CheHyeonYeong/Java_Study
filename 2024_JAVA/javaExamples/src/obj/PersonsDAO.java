@@ -128,7 +128,7 @@ public class PersonsDAO {
         
         try { 
             stmt = conn.createStatement();
-            rs = stmt.executeQuery(sql);
+            rs = stmt.executeQuery(sql);    
             if (rs.next()) {    
                 
                 int id1 = rs.getInt("id");
@@ -158,7 +158,7 @@ public class PersonsDAO {
     public int update(PersonsVO vo){
         int result = 0;
 
-        String sql = "update Persons set firstname='"+vo.getFirstName()+"', lastname='"+vo.getLastName()+ "', age="+ vo.getAge()+", city=''"+vo.getCity()+"where id = "+vo.getId();
+        String sql = "update Persons set firstname='"+vo.getFirstName()+"', lastname='"+vo.getLastName()+ "', age="+ vo.getAge()+", city='"+vo.getCity()+"' where id = "+vo.getId();
            
         return values(sql); 
 

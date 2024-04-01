@@ -55,22 +55,22 @@ public class I08_personsMain {
 		System.out.print("수정할 성을 입력하세요("+uVo.getLastName()+") : ");
 		String lastName = s.next();
 		if(!lastName.equals("")) {
-			vo.setLastName(lastName);(lastName);
+			uVo.setLastName(lastName);
 		}
 		System.out.print("수정할 이름을 입력하세요("+uVo.getFirstName()+") : ");
 		String firstName = s.next();
 		if(!lastName.equals("")) {
-			vo.setFirstName(firstName);
+			uVo.setFirstName(firstName);
 		}
 		System.out.print("수정할 나이을 입력하세요("+uVo.getAge()+") : ");
 		int age = s.nextInt();
 		if(age != 0 && age >= 0) {
-			vo.setAge(age);
+			uVo.setAge(age);
 		}
 		System.out.print("수정할 도시 입력하세요("+uVo.getCity()+") : ");
 		String city = s.next();
 		if(!city.equals("")) {
-			vo.setCity(city);
+			uVo.setCity(city);
 		}
 
 		int result = dao.update(uVo);
