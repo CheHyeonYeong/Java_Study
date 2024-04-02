@@ -1,82 +1,89 @@
 package I_java;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.util.List;
+import java.util.Scanner;
+
+import I_java.obj.TestDAO;
+import I_java.obj.TestVO;
+import obj.PersonsVO;
 
 public class I10_MariaDB {
 
     public static void main(String[] args) {
-                // 데이터베이스 연결 객체(Connection 객체)
-        Connection conn = null; //비어있는 객체선언.
-        Statement stmt = null;
-        ResultSet rs = null;
-
-        try { 
-
-            Class.forName("org.mariadb.jdbc.Driver"); //드라이버를 로드한다.
-
-            conn = DriverManager.getConnection("jdbc:mariadb://localhost:13306/testdb", "root", "root");
-
-            System.out.println("정상 작동합니다..");
-
-            // stmt = conn.createStatement();
-            // String sql = "Create table if not exists testDB ("+
-            //                 "id interger primary key, "+
-            //                 "lastname text(20) not null, "+
-            //                 "firstname text(20), age Numeric, city text(20) default 'Seoul')";
-            // int result = stmt.executeUpdate(sql);
-            // System.out.println("sql 처리결과 : "+(result));
-
-            // //crud 테스트 하세요 update insert delete select
+        Scanner s = new Scanner(System.in);
+        TestDAO dao = new TestDAO();
+        TestVO vo = new TestVO();
 
 
-            // //Create 
-            // String sql1 = "insert into testDB (id, firstname, lastname, age, city)"
-            // + "values(1, 'jdbcTest','testuser13',24,'Seoul')";
+         //데이터 추가
 
-            // result = stmt.executeUpdate(sql1);
+        // System.out.println("Persons에 데이터 추가 ");
+        // System.out.println("성(lastname) 입력 : ");
+        // vo.setLastName(s.next());
+        // System.out.println("이름(firstname) 입력 : ");
+        // vo.setFirstName(s.next());
+        // System.out.println("나이(age) 입력 : ");
+        // vo.setAge(s.nextInt());
+        // System.out.println("주거지(city) 입력 : ");
+        // vo.setCity(s.next());
 
-            // //Read 
-            // String sql2 = "select * from testDB";
-            // rs = stmt.executeQuery(sql2);
-            // while(rs.next()) {    
-            //     int id1 = rs.getInt("id");
-            //     String firstname = rs.getString("firstname");
-            //     String lastname = rs.getString("lastname");
-            //     int age = rs.getInt("age");
-            //     String city = rs.getString("city");
-                
-            //     System.out.printf("ID: %d, First Name: %s, Last Name: %s, Age: %d, City: %s", id1, firstname, lastname, age, city);
-            // }
+        // int result = dao.insert(vo); //report 추가
 
-            // //Update
-            // String sql3 = "update testDB set firstname = '순신', lastname = '이'"+"where id = 1";
-            // result = stmt.executeUpdate(sql3);
+        // if(result!= 0){
+        //     System.out.println("레코드 추가 성공");
+        // }
+        // else{
+        //     System.out.println("레코드 추가 실패");
+        // }
 
-            // //Delete
-            // String sql4 = "Delete from testDB where id = 1";
-            // result = stmt.executeUpdate(sql3);
         
+        List<TestVO> list = dao.allPersons();
+
+        for(TestVO pvo : list){
+            pvo.toString();
+        }
+		System.out.println("특정 id를 가진 Persons 출력");
+		System.out.print("id를 입력해주세요");
+		int ids = s.nextInt();
+		TestVO svo = dao.selectOne(ids);
+		System.out.println(svo);
+
+		System.out.println("<<수정하기>>");
+		System.out.print("특정 id 선택하세요 : ");
+		int id2 = s.nextInt();
+		TestVO uVo = dao.selectOne(id2);
+		System.out.print("수정할 성을 입력하세요("+uVo.getLastName()+") : ");
+		String lastName = s.next();
+		if(!lastName.equals("")) {
+			uVo.setLastName(lastName);
+		}
+		System.out.print("수정할 이름을 입력하세요("+uVo.getFirstName()+") : ");
+		String firstName = s.next();
+		if(!lastName.equals("")) {
+			uVo.setFirstName(firstName);
+		}
+		System.out.print("수정할 나이을 입력하세요("+uVo.getAge()+") : ");
+		int age = s.nextInt();
+		if(age != 0 && age >= 0) {
+			uVo.setAge(age);
+		}
+		System.out.print("수정할 도시 입력하세요("+uVo.getCity()+") : ");
+		String city = s.next();
+		if(!city.equals("")) {
+			uVo.setCity(city);
+		}
+
+		int result = dao.update(uVo);
+		if(result != 0) {
+			System.out.println("수정 성공!!!");
+		}else {
+			System.out.println("수정 실패!!!");
+		}
+
         
-
-        }catch(ClassNotFoundException e){
-            System.out.println("드라이버 로드 실패");
-            System.out.println(e.getMessage());
-
-        } catch (SQLException e) {
-            System.out.println("SQL 연동 실패");
-            System.out.println(e.getMessage());
-        }
-        finally {
-            try {
-                if(conn != null) conn.close();   
-               if(stmt != null) stmt.close();   
-               if (rs!=null) rs.close();            
-            } catch (Exception e) {    }
-        }
+		s.close();
 
     }
 }
+
+
