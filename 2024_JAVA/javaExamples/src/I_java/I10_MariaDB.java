@@ -55,6 +55,8 @@ public class I10_MariaDB {
 		System.out.print("수정할 성을 입력하세요("+uVo.getLastName()+") : ");
 		String lastName = s.next();
 		if(!lastName.equals("")) {
+
+            
 			uVo.setLastName(lastName);
 		}
 		System.out.print("수정할 이름을 입력하세요("+uVo.getFirstName()+") : ");
