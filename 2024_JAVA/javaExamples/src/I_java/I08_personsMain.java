@@ -80,6 +80,7 @@ public class I08_personsMain {
 			System.out.println("수정 실패!!!");
 		}
 
+        
 		s.close();
     }
 }
