@@ -11,33 +11,33 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:\AWSDEVELOP\채현영\sqlite-jdbc-3.45.2.0.jar">
+	<classpathentry kind="lib" path="C:\Users\hyeonyeong\Desktop\2024-1\java\sqlite-jdbc-3.45.2.0.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-		<classpathentry kind="lib" path="D:\AWSDEVELOP\채현영\slf4j-api-2.0.12.jar">
+		<classpathentry kind="lib" path="C:\Users\hyeonyeong\Desktop\2024-1\java\slf4j-api-2.0.12.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:\AWSDEVELOP\채현영\slf4j-simple-2.0.12.jar">
+	<classpathentry kind="lib" path="C:\Users\hyeonyeong\Desktop\2024-1\java\slf4j-simple-2.0.12.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:\AWSDEVELOP\채현영\mariadb-java-client-3.3.3.jar">
+	<classpathentry kind="lib" path="C:\Users\hyeonyeong\Desktop\2024-1\java\mariadb-java-client-3.3.3.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:\AWSDEVELOP\채현영\waffle-jna-3.3.0.jar">
+	<classpathentry kind="lib" path="C:\Users\hyeonyeong\Desktop\2024-1\java\waffle-jna-3.3.0.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
-		<classpathentry kind="lib" path="D:\AWSDEVELOP\채현영\ojdbc11.jar">
+		<classpathentry kind="lib" path="C:\Users\hyeonyeong\Desktop\2024-1\java\ojdbc11.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

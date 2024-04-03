@@ -8,8 +8,6 @@ import java.sql.PreparedStatement;
 
 public class I11_OracleDB {
 
-
-
     public static void main(String[] args) {
      
         //오라클 - PreparedStatement
