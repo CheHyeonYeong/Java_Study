@@ -37,4 +37,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
+		<classpathentry kind="lib" path="D:\AWSDEVELOP\채현영\ojdbc11.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
