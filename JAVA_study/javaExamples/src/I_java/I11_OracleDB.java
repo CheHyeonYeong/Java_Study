@@ -27,7 +27,7 @@ public class I11_OracleDB {
             //Connection 객체 생성
             conn = DriverManager.getConnection(url,user, password);
 
-            System.out.println("정상 작동합니다..");
+            System.out.println("정상 작동합니다..");    
 
             String sql = "insert into persons (id, lastname, firstname, age) values(?,?,?,?)";
             
